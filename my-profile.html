@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>eMercado - Todo lo que busques está aquí</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-1">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav w-100 justify-content-between">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="categories.html">Categorías</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sell.html">Vender</a>
+          </li>
+          <li class="nav-item">
+            <p class="nav-link" href="my-profile.html" id="usuario"></p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!------------------------------------------Edicion----------------------------------------------------->
+ 
+  <main class="container">
+    <div class="container d-inline-flex justify-content-between mt-2 mb-2">
+      <p class="text-start fs-1 mt-2">Perfil</p> <span id="alert"></span>
+      <img src="img/img_perfil.png" id="previewimage" width="150">
+    </div>
+  
+    <form id="form" class="row g-3 needs-validation" novalidate>
+      <hr>
+      <div class="col-md-6">
+        <label class="form-label">Primer nombre</label>
+        <input type="text" class="form-control" name="FirstName" id="FirstName" placeholder="Ingresa tu primer nombre"
+          required>
+      </div>
+      <div class="col-md-6">
+        <label class="form-label">Segundo nombre</label>
+        <input type="text" class="form-control" name="SecondName" id="SecondName" placeholder="Ingresa tu segundo nombre"
+          required>
+      </div>
+      <div class="col-md-6">
+        <label class="form-label">Primer apellido</label>
+        <input type="text" class="form-control" name="FirstLastName" id="FirstLastName"
+          placeholder="Ingresa tu primer apellido" required>
+      </div>
+      <div class="col-md-6">
+        <label class="form-label">Segundo apellido</label>
+        <input type="text" class="form-control" name="SecondLastName" id="SecondLastName"
+          placeholder="Ingresa tu segundo apellido" required>
+      </div>
+      <div class="col-md-6">
+        <label class="form-label">E-mail.</label>
+        <input type="text" class="form-control" id="email" name="email" id="validationCustom03" required>
+      </div>
+      <div class="col-md-6">
+        <label class="form-label">Imagen de perfil</label>
+        <input type="file" accept="image/*" class="form-control" id="img" name="img" onchange="previewImage()" required>
+      </div>
+      <div class="col-md-6">
+        <label class="form-label">Teléfono de contacto</label>
+        <input type="number" class="form-control" name="contact" id="contact" placeholder="Ingresa tu número de contacto"
+          required>
+      </div>
+      <hr>
+      <div>
+        <button type="submit" class="btn btn-primary" id="btnFinalizar">Guardar cambios</button>
+      </div>
+    </form>
+  </main>
+  <footer class="text-muted">
+    <div class="container">
+      <p class="float-end">
+        <a href="#">Volver arriba</a>
+      </p>
+      <p>Este sitio forma parte de <a href="https://jovenesaprogramar.edu.uy/" target="_blank">Jovenes a Programar</a> -
+        2022</p>
+      <p>Clickea <a target="_blank" href="Letra.pdf">aquí</a> para descargar la letra del obligatorio.</p>
+    </div>
+  </footer>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/my-profile.js"></script>
+  
+</body>
+
+</html>

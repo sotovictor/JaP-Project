@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eMercado - Todo lo que busques está aquí</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-1">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav w-100 justify-content-between">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="categories.html">Categorías</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sell.html">Vender</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="my-profile.html" id="usuario"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!-----------------------------------------------Contenido----------------------------------------------------------------->
+  <main>
+    <div id="main">
+  
+      <div class="d-grid gap-3">
+        <div class="p-2 bg-light border">
+          <div class="row position-relative">
+  
+            <div class="row justify-content-between">
+              <div class="col-4">
+                <h1 class="display-6 p-3" id="title"></h1>
+              </div>
+              <div class="col-4">
+                <button id="buttonBuy" type="button" class="btn btn-success m-3">Comprar</button>
+              </div>
+            </div>
+            <p class="text-start fs-6 fw-bold">Precio</p>
+            <p id="cost"></p>
+  
+            <p class="text-start fs-6 fw-bold">Descripcion</p>
+            <p id="description"></p>
+  
+            <p class="text-start fs-6 fw-bold">Categoria</p>
+            <p id="category"></p>
+  
+            <p class="text-start fs-6 fw-bold">Cantidad de vendidos</p>
+            <p id="soldCount"></p>
+  
+            <p class="text-start fs-6 fw-bold" id="images">Imagenes ilustrativas</p>
+  
+          </div>
+          <!-----------------------------------------------------------Comentarios--------------------------------------------------------------------->
+          <div class="d-grid gap-3">
+            <div class="p-2 bg-light border">
+              <p class="text-start fs-3 p-2">Comentarios</p>
+              <p id="comments"></p>
+            </div>
+          </div>
+          <!-----------------------------------------------------------Comentar--------------------------------------------------------------------->
+  
+          <div class="d-grid gap-3 p-2">
+            <div class="p-2 bg-light border">
+              <h3>Comentar</h3>
+              <form>
+                <p>Dejanos tu opinión!</p>
+                <input id="input" style="width:600px;height:100px" placeholder="escribe tu comentario aca..."
+                  required></input>
+                <p class="mt-3">Tu puntuacion:</p>
+                <div class="rating" style="cursor: pointer">
+                  <span class="fa fa-star" id="1star" onclick="calificar(this)"></span>
+                  <span class="fa fa-star" id="2star" onclick="calificar(this)"></span>
+                  <span class="fa fa-star" id="3star" onclick="calificar(this)"></span>
+                  <span class="fa fa-star" id="4star" onclick="calificar(this)"></span>
+                  <span class="fa fa-star" id="5star" onclick="calificar(this)"></span>
+                </div>
+                <br>
+                <button class="btn btn-primary my-2" id="btnBuscar">Enviar</button>
+              </form>
+            </div>
+          </div>
+          <!-----------------------------------------------------------Productos relacionados--------------------------------------------------------------------->
+          <div id="related">
+            <p class="text-start fs-5 p-2">Productos relacionados</p>
+          </div>
+  </main>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/product-info.js"></script>
+</body>
+</html>
